@@ -117,7 +117,7 @@ MapColor <- function(df,colorVar,latVar,lonVar,
   fillCol <- rep(col1,dim(df)[1])
   for (i in 1:length(binThresh)) fillCol <- ifelse(df[,colorVar] > binThresh[i],binCol[i],fillCol)
   plot(politicalBounds,col="gray90",xlim=c(xmin,xmax),ylim=c(ymin,ymax))
-  plot(hydroPolygons,col="lightskyblue2",xlim=c(xmin,xmax),ylim=c(ymin,ymax),add=TRUE)#
+  plot(hydroPolygons,col="red",xlim=c(xmin,xmax),ylim=c(ymin,ymax),add=TRUE)#
   lines(hydroLines,col="lightskyblue2",xlim=c(xmin,xmax),ylim=c(ymin,ymax))#
   plot(politicalBounds,add=TRUE)
   
